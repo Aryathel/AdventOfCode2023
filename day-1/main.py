@@ -79,10 +79,10 @@ def convert_digit_strings(inp: str) -> str:
     >>> "49eight72"
     """
     firstpos, lastpos = find_digit_str_pos(inp)
-    if firstpos:
+    if firstpos is not None:
         inp = inp.replace(DIGITS[firstpos], str(firstpos), 1)
 
-    if lastpos:
+    if lastpos is not None:
         inp = str(lastpos).join(inp.rsplit(DIGITS[lastpos], 1))
 
     return inp
