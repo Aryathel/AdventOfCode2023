@@ -17,11 +17,12 @@ class MapRow:
         self.offset = self.dest_start - self.src_start
         self.src_end = self.src_start + self.rng
 
-    def points(self) -> list[tuple[int, int]]:
-        return [
-            (self.src_start, self.offset),
-            (self.src_end, 0)
-        ]
+    @property
+    def points(self) -> dict[int, int]:
+        return {
+            self.src_start: self.offset,
+            self.src_end: 0,
+        }
 
     def map_value(self, val: int) -> int | None:
         """Maps a single value range to its output value."""
@@ -64,6 +65,11 @@ class AlmanacMap:
     @property
     def map_lines(self):
         return self.raw_map.strip().split('\n')[1:]
+
+    @property
+    def points(self):
+        if self.maps:
+            point = self.maps[0].points
 
     def read_keys(self):
         """Reads the from key and to keys from the raw input."""
