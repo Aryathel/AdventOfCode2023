@@ -1,5 +1,5 @@
 from core.file_reader import file_lines
-from day_1.main import digits
+from aoc2023.day_1.main import digits
 
 
 CUBE_LIMITS = {
@@ -79,7 +79,7 @@ def multiply_list(vals: list[int]) -> int:
 
 def main():
     # Read Input
-    lines = file_lines("./input.txt")
+    lines = file_lines("input.txt")
 
     # Part 1
     # Sum the game numbers of all possible games.

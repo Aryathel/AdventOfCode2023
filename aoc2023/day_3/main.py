@@ -117,7 +117,7 @@ def check_gear_ratio(numbers: list[dict[tuple[int, int], int]], line_index: int,
 
 def main():
     # Read Input
-    lines = file_lines("./input.txt")
+    lines = file_lines("input.txt")
 
     # Part 1
     tot = 0

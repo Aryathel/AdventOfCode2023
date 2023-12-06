@@ -90,7 +90,7 @@ def map_seed_ranges(seeds: list[int], maps: list[list[tuple[int, int, int]]]) ->
 
 def main():
     # Read Input
-    content = read_file("./input.txt")
+    content = read_file("input.txt")
 
     seeds, maps = parse_input(content)
 

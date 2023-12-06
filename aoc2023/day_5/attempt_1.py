@@ -165,7 +165,7 @@ def parse_input(content: str) -> tuple[list[int], Almanac]:
 
 def main():
     # Read Input
-    content = read_file("./input.txt")
+    content = read_file("input.txt")
 
     # Part 1
     seeds, almanac = parse_input(content)

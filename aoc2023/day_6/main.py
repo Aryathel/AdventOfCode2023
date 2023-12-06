@@ -60,7 +60,7 @@ def count_winning_times(time: int, record_distance: int) -> int:
 
 def main():
     # Read Input
-    time, distance = file_lines("./input.txt")
+    time, distance = file_lines("input.txt")
     time = parse_line(time)
     distance = parse_line(distance)
 

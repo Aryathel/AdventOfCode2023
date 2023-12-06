@@ -90,7 +90,7 @@ def convert_digit_strings(inp: str) -> str:
 
 def main():
     # Read Input
-    lines = file_lines("./input.txt")
+    lines = file_lines("input.txt")
 
     # Part 1
     tot = 0
