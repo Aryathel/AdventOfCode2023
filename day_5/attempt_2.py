@@ -2,7 +2,7 @@ from core.file_reader import read_file
 
 
 # Parsing
-def parse_input(content: str) -> tuple[list[int], list[list[tuple[int]]]]:
+def parse_input(content: str) -> tuple[list[int], list[list[tuple[int, int, int]]]]:
     """Reads input file content into a list of ints and a collection of mapping ranges."""
 
     seed_seg, *map_segs = content.strip().split('\n\n')
@@ -15,8 +15,12 @@ def parse_input(content: str) -> tuple[list[int], list[list[tuple[int]]]]:
 
 
 # Processing
-def map_seeds(seeds: list[int], maps: list[list[tuple[int]]]) -> list[int]:
-    """Walk the list of seeds forward together as a group through each conversion step."""
+def map_seeds(seeds: list[int], maps: list[list[tuple[int, int, int]]]) -> list[int]:
+    """Walk the list of seeds forward together as a group through each conversion step.
+
+    >>> map_seeds([10, 5], [[(1, 5, 8)]])
+    >>> [6, 1]
+    """
     # Iterate over each conversion block in the input.
     for step in maps:
         stepped_seeds = []
@@ -40,8 +44,13 @@ def map_seeds(seeds: list[int], maps: list[list[tuple[int]]]) -> list[int]:
     return seeds
 
 
-def map_seed_ranges(seeds: list[int], maps: list[list[tuple[int]]]) -> list[tuple[int, int]]:
-    """Walk the list of seed ranges forward together through each conversion step."""
+def map_seed_ranges(seeds: list[int], maps: list[list[tuple[int, int, int]]]) -> list[tuple[int, int]]:
+    """Walk the list of seed ranges forward together through each conversion step.
+
+    Each seed range is split up and conversion is applied based on the conversion range it overlaps with:
+    >>> map_seed_ranges([10, 5], [[(1, 5, 8)]])
+    >>> [(6, 3), (13, 2)]
+    """
     # Convert the list of ints into a list of tuples of seed start value and length of the seed range.
     seed_stack = [(seeds[i], seeds[i+1]) for i in range(0, len(seeds), 2)]
 
