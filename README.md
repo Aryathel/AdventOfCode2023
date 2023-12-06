@@ -4,14 +4,14 @@ Greetings! This is my collection of code for [Advent of Code 2023](https://adven
 
 Here is the status of the current year's challenges for me:
 
-| Day | Part 1                  | Part 2                  |
-|-----|-------------------------|-------------------------|
-| 1   | :ballot_box_with_check: | :ballot_box_with_check: |
-| 2   | :ballot_box_with_check: | :ballot_box_with_check: |
-| 3   | :ballot_box_with_check: | :ballot_box_with_check: |
-| 4   | :ballot_box_with_check: | :ballot_box_with_check: |
-| 5   | :ballot_box_with_check: | :ballot_box_with_check: |
-| 6   | :ballot_box_with_check: | :ballot_box_with_check: |
+| Day                                                                           | Part 1                  | Part 2                  |
+|-------------------------------------------------------------------------------|-------------------------|-------------------------|
+| [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1)                     | :ballot_box_with_check: | :ballot_box_with_check: |
+| [Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2)                  | :ballot_box_with_check: | :ballot_box_with_check: |
+| [Day 3: Gear Ratios](https://adventofcode.com/2023/day/3)                     | :ballot_box_with_check: | :ballot_box_with_check: |
+| [Day 4: Scratchcards](https://adventofcode.com/2023/day/4)                    | :ballot_box_with_check: | :ballot_box_with_check: |
+| [Day 5: If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) | :ballot_box_with_check: | :ballot_box_with_check: |
+| [Day 6: Wait For It](https://adventofcode.com/2023/day/6)                     | :ballot_box_with_check: | :ballot_box_with_check: |
 
 ---
 
