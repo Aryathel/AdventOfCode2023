@@ -13,6 +13,7 @@ Here is the status of the current year's challenges for me:
 | [Day 5: If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) | :ballot_box_with_check: | :ballot_box_with_check: |
 | [Day 6: Wait For It](https://adventofcode.com/2023/day/6)                     | :ballot_box_with_check: | :ballot_box_with_check: |
 | [Day 7: Camel Cards](https://adventofcode.com/2023/day/7)                     | :ballot_box_with_check: | :ballot_box_with_check: |
+| [Day 8: Haunted Wasteland](https://adventofcode.com/2023/day/8)               | :ballot_box_with_check: | :ballot_box_with_check: |
 
 ---
 

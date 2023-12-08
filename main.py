@@ -11,8 +11,7 @@ def run_all_days():
         day_start = time()
         method(f"./aoc2023/day_{i}/input.txt")
         day_end = time()
-        print(f"------ {day_end - day_start:.4} seconds ------")
-        print()
+        print(f"------ {day_end - day_start:.4} seconds ------", end="\n\n")
 
     all_end = time()
     print(f"Full Runtime: {all_end - all_start:.4} seconds")
