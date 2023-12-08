@@ -77,9 +77,9 @@ def multiply_list(vals: list[int]) -> int:
     return res
 
 
-def main():
+def main(file_input: str):
     # Read Input
-    lines = file_lines("input.txt")
+    lines = file_lines(file_input)
 
     # Part 1
     # Sum the game numbers of all possible games.
@@ -103,4 +103,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main("./input.txt")

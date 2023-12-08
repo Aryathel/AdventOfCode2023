@@ -7,9 +7,9 @@ from core.file_reader import file_lines
 # Processing
 
 
-def main():
+def main(file_input: str) -> None:
     # Read Input
-    lines = file_lines("./input.txt")
+    lines = file_lines(file_input)
 
     # Part 1
 
@@ -17,4 +17,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main("./input.txt")

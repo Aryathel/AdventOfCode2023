@@ -88,9 +88,9 @@ def convert_digit_strings(inp: str) -> str:
     return inp
 
 
-def main():
+def main(input_file: str):
     # Read Input
-    lines = file_lines("input.txt")
+    lines = file_lines(input_file)
 
     # Part 1
     tot = 0
@@ -108,4 +108,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main("./input.txt")

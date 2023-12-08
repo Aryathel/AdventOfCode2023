@@ -88,9 +88,9 @@ def map_seed_ranges(seeds: list[int], maps: list[list[tuple[int, int, int]]]) ->
     return seed_stack
 
 
-def main():
+def main(file_input: str):
     # Read Input
-    content = read_file("input.txt")
+    content = read_file(file_input)
 
     seeds, maps = parse_input(content)
 
@@ -108,4 +108,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main("./input.txt")

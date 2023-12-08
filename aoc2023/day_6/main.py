@@ -58,9 +58,9 @@ def count_winning_times(time: int, record_distance: int) -> int:
     return max_time - min_time + 1
 
 
-def main():
+def main(file_input: str):
     # Read Input
-    time, distance = file_lines("input.txt")
+    time, distance = file_lines(file_input)
     time = parse_line(time)
     distance = parse_line(distance)
 
@@ -84,4 +84,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main("./input.txt")

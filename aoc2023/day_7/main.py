@@ -112,9 +112,9 @@ def hand_to_int(hand: str, use_jokers: bool = False) -> int:
         return int(''.join(f"{CARDS.index(c):-02}" for c in hand))
 
 
-def main():
+def main(file_input: str):
     # Read Input
-    lines = file_lines("./input.txt")
+    lines = file_lines(file_input)
     hands = list(map(parse_line, lines))
 
     # Part 1
@@ -144,4 +144,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main("./input.txt")

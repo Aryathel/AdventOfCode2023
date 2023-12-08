@@ -74,9 +74,9 @@ def total_card_count(cards: dict[int, dict[str, int]]) -> int:
     return tot
 
 
-def main():
+def main(file_input: str):
     # Read Input
-    lines = file_lines("input.txt")
+    lines = file_lines(file_input)
 
     # Part 1
     tot = 0
@@ -102,4 +102,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main("./input.txt")
