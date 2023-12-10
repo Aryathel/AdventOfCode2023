@@ -15,6 +15,7 @@ Here is the status of the current year's challenges for me:
 | [Day 7: Camel Cards](https://adventofcode.com/2023/day/7)                     | :ballot_box_with_check: | :ballot_box_with_check: |
 | [Day 8: Haunted Wasteland](https://adventofcode.com/2023/day/8)               | :ballot_box_with_check: | :ballot_box_with_check: |
 | [Day 9: Mirage Maintenance](https://adventofcode.com/2023/day/9)              | :ballot_box_with_check: | :ballot_box_with_check: |
+| [Day 10: Pipe Maze](https://adventofcode.com/2023/day/10)                     | :ballot_box_with_check: | :ballot_box_with_check: |
 
 ---
 
