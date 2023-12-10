@@ -6,6 +6,7 @@ from .day_5.attempt_2 import main as day_5
 from .day_6.main import main as day_6
 from .day_7.main import main as day_7
 from .day_8.main import main as day_8
+from .day_9.main import main as day_9
 
 DAY_METHODS = [
     day_1,
@@ -16,7 +17,7 @@ DAY_METHODS = [
     day_6,
     day_7,
     day_8,
-    # day_9,
+    day_9,
     # day_10,
     # day_11,
     # day_12,
