@@ -26,6 +26,12 @@ def parse_input(content: str) -> tuple[str, dict[str, tuple[str, str]]]:
 
 # Processing
 def count_steps_to_target(steps: str, maps: dict[str, tuple[str, str]]) -> int:
+    """Count the number of steps to reach a target "ZZZ" value from a "AAA" starting point using the
+    steps provided and navigating through the maps provided.
+
+    >>> count_steps_to_target("LR", {"AAA": ("AAA", "BBB"), "BBB": ("ZZZ", "AAA")})
+    >>> 3
+    """
     loc = "AAA"
     target = "ZZZ"
 
@@ -40,11 +46,23 @@ def count_steps_to_target(steps: str, maps: dict[str, tuple[str, str]]) -> int:
 
 
 def count_grouped_steps_to_target(steps: str, maps: dict[str, tuple[str, str]]) -> int:
+    """Check the number of steps to for all values in the map that end in "A" to all reach values in the map that
+    end in "Z" at the same time.
+
+    The observation that can be made here is that each starting value takes a certain number of steps to reach
+    a value ending in Z, then cycles back to the start of its rotation. So by checking the number of steps
+    to reach a value ending in Z for all values ending in A, then we can take the lowest common multiple
+    of those step counts to get the total number of steps required.
+
+    >>> # I don't feel like typing out a complete example for this one.
+    """
+    # Get all values ending with "A" to start from.
     locs = [m for m in maps if m.endswith("A")]
     counts_to_hit_z = []
 
     total_steps = len(steps)
 
+    # Get the number of steps to hit a value ending in "Z" for all starting values.
     for starting_loc in locs:
         step_count = 0
 
@@ -55,6 +73,7 @@ def count_grouped_steps_to_target(steps: str, maps: dict[str, tuple[str, str]]) 
 
         counts_to_hit_z.append(step_count)
 
+    # Return the lowest common multiple.
     return lcm(*counts_to_hit_z)
 
 
