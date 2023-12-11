@@ -1,4 +1,4 @@
-from core.file_reader import read_file
+from core.input_reader import get_day_input
 
 
 # Parsing
@@ -88,9 +88,10 @@ def map_seed_ranges(seeds: list[int], maps: list[list[tuple[int, int, int]]]) ->
     return seed_stack
 
 
-def main(file_input: str):
+def main():
     # Read Input
-    content = read_file(file_input)
+    day = 5
+    content = get_day_input(day)
 
     seeds, maps = parse_input(content)
 
@@ -108,4 +109,4 @@ def main(file_input: str):
 
 
 if __name__ == "__main__":
-    main("./input.txt")
+    main()

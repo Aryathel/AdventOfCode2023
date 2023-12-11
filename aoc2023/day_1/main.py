@@ -1,4 +1,4 @@
-from core.file_reader import file_lines
+from core.input_reader import get_day_input
 
 DIGITS = [
     "zero",
@@ -88,9 +88,10 @@ def convert_digit_strings(inp: str) -> str:
     return inp
 
 
-def main(input_file: str):
+def main():
     # Read Input
-    lines = file_lines(input_file)
+    day = 1
+    lines = get_day_input(day).splitlines()
 
     # Part 1
     tot = 0
@@ -108,4 +109,4 @@ def main(input_file: str):
 
 
 if __name__ == "__main__":
-    main("./input.txt")
+    main()

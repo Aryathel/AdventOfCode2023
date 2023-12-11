@@ -1,6 +1,6 @@
 from math import ceil
 
-from core.file_reader import file_lines
+from core.input_reader import get_day_input
 from core.util_methods import product
 
 
@@ -58,9 +58,10 @@ def count_winning_times(time: int, record_distance: int) -> int:
     return max_time - min_time + 1
 
 
-def main(file_input: str):
+def main():
     # Read Input
-    time, distance = file_lines(file_input)
+    day = 6
+    time, distance = get_day_input(day).splitlines()
     time = parse_line(time)
     distance = parse_line(distance)
 
@@ -84,4 +85,4 @@ def main(file_input: str):
 
 
 if __name__ == "__main__":
-    main("./input.txt")
+    main()

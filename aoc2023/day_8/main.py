@@ -1,7 +1,7 @@
 import re
 from math import lcm
 
-from core.file_reader import read_file
+from core.input_reader import get_day_input
 
 
 INPUT_PATTERN = re.compile(r"(?P<loc>.{3}) = \((?P<left>.{3}), (?P<right>.{3})\)")
@@ -77,9 +77,10 @@ def count_grouped_steps_to_target(steps: str, maps: dict[str, tuple[str, str]]) 
     return lcm(*counts_to_hit_z)
 
 
-def main(file_input: str) -> None:
+def main() -> None:
     # Read Input
-    content = read_file(file_input)
+    day = 8
+    content = get_day_input(day)
     instructions, maps = parse_input(content)
 
     # Part 1
@@ -94,4 +95,4 @@ def main(file_input: str) -> None:
 
 
 if __name__ == "__main__":
-    main("./input.txt")
+    main()

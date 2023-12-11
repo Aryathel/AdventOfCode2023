@@ -9,7 +9,7 @@ from core.input_reader import get_day_input
 
 def main() -> None:
     # Read Input
-    day = 0
+    day = 11
     lines = get_day_input(day).splitlines()
 
     # Part 1

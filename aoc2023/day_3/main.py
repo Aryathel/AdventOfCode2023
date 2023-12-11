@@ -1,6 +1,6 @@
 import re
 
-from core.file_reader import file_lines
+from core.input_reader import get_day_input
 
 
 NUM_PATTERN = re.compile(r"\d+")
@@ -115,9 +115,10 @@ def check_gear_ratio(numbers: list[dict[tuple[int, int], int]], line_index: int,
     return 0
 
 
-def main(file_input: str):
+def main():
     # Read Input
-    lines = file_lines(file_input)
+    day = 3
+    lines = get_day_input(day).splitlines()
 
     # Part 1
     tot = 0
@@ -141,4 +142,4 @@ def main(file_input: str):
 
 
 if __name__ == "__main__":
-    main("./input.txt")
+    main()

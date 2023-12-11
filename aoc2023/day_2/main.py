@@ -1,4 +1,4 @@
-from core.file_reader import file_lines
+from core.input_reader import get_day_input
 from aoc2023.day_1.main import digits
 
 
@@ -77,9 +77,10 @@ def multiply_list(vals: list[int]) -> int:
     return res
 
 
-def main(file_input: str):
+def main():
     # Read Input
-    lines = file_lines(file_input)
+    day = 2
+    lines = get_day_input(day).splitlines()
 
     # Part 1
     # Sum the game numbers of all possible games.
@@ -103,4 +104,4 @@ def main(file_input: str):
 
 
 if __name__ == "__main__":
-    main("./input.txt")
+    main()

@@ -1,6 +1,6 @@
 from enum import Enum
 
-from core.file_reader import file_lines
+from core.input_reader import get_day_input
 
 
 # Define all possible cards, and can use the indices to order them for scoring.
@@ -112,9 +112,10 @@ def hand_to_int(hand: str, use_jokers: bool = False) -> int:
         return int(''.join(f"{CARDS.index(c):-02}" for c in hand))
 
 
-def main(file_input: str):
+def main():
     # Read Input
-    lines = file_lines(file_input)
+    day = 7
+    lines = get_day_input(day).splitlines()
     hands = list(map(parse_line, lines))
 
     # Part 1
@@ -144,4 +145,4 @@ def main(file_input: str):
 
 
 if __name__ == "__main__":
-    main("./input.txt")
+    main()

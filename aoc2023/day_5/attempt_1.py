@@ -1,6 +1,6 @@
 import re
 
-from core.file_reader import read_file
+from core.input_reader import get_day_input
 
 
 MAP_KEY_PATTERN = re.compile(r"(?P<from>.+)-to-(?P<to>.+) map:")
@@ -165,7 +165,8 @@ def parse_input(content: str) -> tuple[list[int], Almanac]:
 
 def main():
     # Read Input
-    content = read_file("input.txt")
+    day = 5
+    content = get_day_input(day)
 
     # Part 1
     seeds, almanac = parse_input(content)

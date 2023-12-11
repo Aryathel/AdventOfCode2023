@@ -1,4 +1,4 @@
-from core.file_reader import file_lines
+from core.input_reader import get_day_input
 
 
 # Tracks the directions that a pipe segment connects to.
@@ -230,9 +230,10 @@ class Field:
         return from_loc == cls.get_east(to_loc)
 
 
-def main(file_input: str) -> None:
+def main() -> None:
     # Read Input
-    lines = file_lines(file_input)
+    day = 10
+    lines = get_day_input(day).splitlines()
     field = Field(pipes=lines)
 
     # Part 1
@@ -247,4 +248,4 @@ def main(file_input: str) -> None:
 
 
 if __name__ == "__main__":
-    main("./input.txt")
+    main()

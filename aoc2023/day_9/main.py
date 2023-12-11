@@ -1,4 +1,4 @@
-from core.file_reader import file_lines
+from core.input_reader import get_day_input
 
 
 # Input Parsing
@@ -64,9 +64,10 @@ def find_previous_value(pattern: list[int]) -> int:
     return sum(final_vals)
 
 
-def main(file_input: str) -> None:
+def main() -> None:
     # Read Input
-    lines = file_lines(file_input)
+    day = 9
+    lines = get_day_input(day).splitlines()
     patterns = list(map(parse_line, lines))
 
     # Part 1
@@ -85,4 +86,4 @@ def main(file_input: str) -> None:
 
 
 if __name__ == "__main__":
-    main("./input.txt")
+    main()
