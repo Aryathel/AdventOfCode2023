@@ -19,6 +19,7 @@ Here is the status of the current year's challenges for me:
 | [Day 11: Cosmic Expansion](https://adventofcode.com/2023/day/11)              | :ballot_box_with_check: | :ballot_box_with_check: |
 | [Day 12: Hot Springs](https://adventofcode.com/2023/day/12)                   | :ballot_box_with_check: | :ballot_box_with_check: |
 | [Day 13: Point of Incidence](https://adventofcode.com/2023/day/13)            | :ballot_box_with_check: | :ballot_box_with_check: |
+| [Day 14: Parabolic Reflector Dish](https://adventofcode.com/2023/day/14)      | :ballot_box_with_check: | :ballot_box_with_check: |
 
 ---
 
