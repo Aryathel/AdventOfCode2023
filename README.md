@@ -18,6 +18,7 @@ Here is the status of the current year's challenges for me:
 | [Day 10: Pipe Maze](https://adventofcode.com/2023/day/10)                     | :ballot_box_with_check: | :ballot_box_with_check: |
 | [Day 11: Cosmic Expansion](https://adventofcode.com/2023/day/11)              | :ballot_box_with_check: | :ballot_box_with_check: |
 | [Day 12: Hot Springs](https://adventofcode.com/2023/day/12)                   | :ballot_box_with_check: | :ballot_box_with_check: |
+| [Day 13: Point of Incidence](https://adventofcode.com/2023/day/13)            | :ballot_box_with_check: | :ballot_box_with_check: |
 
 ---
 
